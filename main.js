@@ -135,6 +135,7 @@ healthcheck(callback) {
       log.info('ServiceNow online.');
       callbackData = result;
    }
+   callback(dataReturn,dataError);
  });
 }
 
