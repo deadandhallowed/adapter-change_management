@@ -192,7 +192,7 @@ healthcheck(callback) {
      * Note how the object was instantiated in the constructor().
      * get() takes a callback function.
      */
-     ServiceNowConnector.get(callback);
+     this.connector.get(callback);
   }
 
   /**
@@ -211,7 +211,7 @@ healthcheck(callback) {
      * Note how the object was instantiated in the constructor().
      * post() takes a callback function.
      */
-     ServiceNowConnector.post(callback);
+     this.connector.post(callback);
   }
 }
 
