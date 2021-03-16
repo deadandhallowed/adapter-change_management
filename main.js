@@ -213,6 +213,32 @@ healthcheck(callback) {
      */
      this.connector.post(callback);
   }
+    /*
+    test (){
+      this.getRecord((data, error) => {
+        if (error) {
+          console.error(`\nError returned from GET request:\n${JSON.stringify(error)}`);
+        }
+        console.log(`\nResponse returned from GET request:\n${JSON.stringify(data)}`);
+      });
+      this.postRecord((data, error) => {
+        if (error) {
+          console.error(`\nError returned from POST request:\n${JSON.stringify(error)}`);
+        }
+        console.log(`\nResponse returned from POST request:\n${JSON.stringify(data)}`);
+      });
+    }
+    */
 }
+/*
+const test = new ServiceNowAdapter('123', {
+  url: 'https://dev100309.service-now.com',
+  auth:{
+  username: 'admin',
+  password: '3ncryptM3'},
+  serviceNowTable: 'change_request'
+});
+test.test();
+*/
 
 module.exports = ServiceNowAdapter;
