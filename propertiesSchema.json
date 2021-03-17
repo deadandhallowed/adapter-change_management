@@ -5,9 +5,9 @@
   "properties": {
     "url": {
       "type": "string",
-      "default": "https://dev100309.service-now.com/",
+      "default": "https://dev100309.service-now.com",
       "examples": [
-        "https://dev100309.service-now.com/"
+        "https://dev100309.service-now.com"
       ]
     },
     "auth": {
@@ -22,9 +22,9 @@
         },
         "password": {
           "type": "string",
-          "default": "$ENCd0e484385d65e568d9c7570f99d4261b8b852585a9d040935f",
+          "default": "3ncryptM3",
           "examples": [
-            "$ENCd0e484385d65e568d9c7570f99d4261b8b852585a9d040935f"
+            "3ncryptM3"
           ]
         }
       },

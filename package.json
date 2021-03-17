@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/deadandhallowed/adapter-change_management#readme",
   "dependencies": {
+    "events": "^3.3.0",
+    "path": "^0.12.7",
     "request": "^2.88.2"
   }
 }
