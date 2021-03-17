@@ -10,35 +10,38 @@
   ],
   "methods": [
     {
-      "name": "getRecord",
-      "summary": "Get Change Tickets",
-      "description": "Get the first ServiceNow change management ticket.",
-      "input": [],
-      "output": {
-        "name": "changeTickets",
-        "type": "array",
-        "description": "An array of objects. Each element is a change management ticket document.",
-        "schema": {
-          "title": "changeTicket",
-          "$ref": "changeRequest#/definitions/changeTicket"
-        }
-      },
-      "roles": [
-        "admin",
-        "engineer",
-        "operator"
-      ],
-      "task": true
+        "name": "getRecord",
+        "summary": "Get Change Tickets",
+        "description": "Get the first ServiceNow change management ticket.",
+        "input": [],
+        "output": {
+            "name": "changeTickets",
+            "type": "array",
+            "description": "An array of objects. Each element is a change management ticket document.",
+            "schema": {
+            "type": "array",
+            "items": {
+                "title": "changeTicket",
+                "$ref": "changeRequest#/definitions/changeTicket"
+            }
+            }
+        },
+        "roles": [
+            "admin",
+            "engineer",
+            "operator"
+        ],
+        "task": true
     },
     {
        "name": "postRecord", 
-       "summary":"return created ticket",
-       "description":"Return created ticket from serviceNow managment ticket.",
+       "summary":"Post Change Ticket",
+       "description":"Create a ServiceNow change management ticket.",
        "input":[],
        "output":{
-        "name": "changeTickets",
+        "name": "changeTicket",
         "type": "object",
-        "description": "posted ticket object",
+        "description": "An object defining a change management ticket document.",
         "schema": {
           "title": "changeTicket",
           "$ref": "changeRequest#/definitions/changeTicket"
